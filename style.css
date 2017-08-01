@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers|Alegreya|Pacifico');
+
+@media screen and (max-width: 1336px){
+	ul li, li a, .search{
+		width: 100%;
+	}
+
+	body{ font-size: 12px; }
+}
+
+html, body{
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	background-color: rgba(254, 232, 206, 1);
+}
+
+#pageTitle{
+	font-size: 4.375em;
+	font-weight: bolder;
+	font-family: 'Pacifico', cursive;
+	text-align: center;
+	padding-top: 80px;
+	padding-bottom: 70px;
+	color: rgba(254, 174, 74, 255);
+	text-shadow: rgba(42, 22, 2, 1) 1px 1px 2px;
+}
+
+.divisor{
+	border: solid rgba(42, 22, 2, 1) 1px;
+}
+
+li img{
+	margin-top: -5px;
+	width: 225px;
+	height: 46px;
+}
+
+#nbElm{
+	font-family: 'Bangers', cursive;
+	font-size: 1.5625em;
+	text-decoration: none;
+}
+
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: rgba(42, 22, 2, 1);
+}
+
+li{
+	float: left;
+}
+
+li:last-child{
+	border: none;
+	float: right;
+}
+
+li a{
+	transition: .3s;
+	display: block;
+	min-width: 80px;
+	height: 65px;
+	line-height: 35px;
+	text-decoration: none;
+	padding: 16px;
+	text-align: center;
+	color: rgba(237, 132, 5, 1);
+}
+
+li #nbElm:hover {
+	transition: .3s;
+	background-color: rgba(254, 174, 74, 255);
+	color: rgba(42, 22, 2, 1);
+}
+
+li a.active{
+	background-color: rgba(254, 174, 74, 255);
+	color: rgba(42, 22, 2, 1);
+}
+
+.search[type=text] {
+    width: 175px;
+	height: 65px;
+	margin-right: 20px;
+    box-sizing: border-box;
+	border: none;
+	font-family: 'Alegreya', serif;
+    font-size: 20px;
+	color: rgba(42, 22, 2, 1);
+    background-color: rgba(237, 132, 5, 1);
+    background-image: url('images/searchicon.png');
+	background-origin: border-box;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 60px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.search[type=text]:focus {
+    width: 100%;
+	background-color: rgba(254, 174, 74, 255);
+}
+
+.image {
+	margin-bottom: 10px;
+   	position: relative;
+   	width: 100%;
+   	height: 100%;
+   	background-color: rgba(254, 174, 74, 255);
+}
+
+#content-img {
+	transition: .5s;
+	width: 100%;
+}
+
+.image:hover #content-img{
+	transition: .5s;
+	opacity: .5;
+}
+
+#imageDesc {
+	cursor: default;
+	transition: .2s;
+	background-color: rgba(0, 0, 0, .7);
+	height: 100%;
+	position: absolute;
+	margin: 0;
+	padding: 20px;
+	top: 0;
+	line-height: 30px;
+	width: 50%;
+	text-align: justify;
+	opacity: 0;
+	text-indent: 15px;
+}
+
+.image:hover #imageDesc span{
+	transition: .5s;
+	opacity: 1;
+}
+
+.image:hover #imageDesc{
+	transition: .5s;
+	opacity: 1;
+}
+
+#imageDesc span{
+	transition: .2s;
+	opacity: 0;
+   	color: white;
+   	font: bolder .9em 'Alegreya', serif;
+}
+
+h3{
+	font-family: 'Alegreya', serif;
+	color: rgba(42, 22, 2, 1);
+	font-size: 1.875em;
+	text-align: center;
+	font-weight: bolder;
+}
+
+h2{
+	font-family: 'Alegreya', serif;
+	color: rgba(42, 22, 2, 1);
+	font-size: 1.25em;
+	text-align: center;
+	font-weight: bolder;
+}
+
+h4 {
+	font-family: 'Alegreya', serif;
+	color: rgba(42, 22, 2, 1);
+	font-size: 1.5625em;
+	text-align: center;
+	font-weight: bolder;
+}
+
+h5 {
+	font-family: 'Alegreya', serif;
+	color: rgba(42, 22, 2, 1);
+	font-size: 1.25em;
+	text-align: center;
+	font-weight: bolder;
+}
+
+td{
+	text-indent: 15px;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+}
+
+#topic{
+	background: rgba(254, 174, 74, 255);
+	font-family: 'Alegreya', serif;
+	font-size: 1.25em;
+	font-weight: bolder;
+	color: rgba(42, 22, 2, 1);
+}
+
+#explan{
+	background: rgba(254, 174, 74, 255);
+	color: rgba(42, 22, 2, 1);
+	font-size: 1.125em;
+	font-family: 'Alegreya', serif;
+	text-align: justify;
+	padding: 20px;
+	height: 200px;
+}
+
+.maissobre{
+	cursor: pointer;
+	transition: .3s;
+	font-family: 'Alegreya', serif;
+	font-size: 1.5625em;
+	font-weight: bolder;
+	color: rgba(42, 22, 2, 1);
+	background-color: rgba(254, 204, 144, 1);
+}
+
+.maissobre:hover{
+	transition: .3s;
+	color: rgba(254, 174, 74, 1);
+	background: rgba(254, 232, 206, 1);
+	font-weight: bolder;
+}
+
+#subP{
+	color: rgba(42, 22, 2, 1);
+	font-size: 1.5em;
+	text-align: center;
+	font-weight: bolder;
+	font-family: 'Alegreya', serif;
+}
+
+p{
+	color: rgba(42, 22, 2, 1);
+	text-indent: 30px;
+	font-size: 1.4em;
+	text-align: justify;
+	font-weight: bolder;
+	font-family: 'Alegreya', serif;
+}
+
+#siteTitleAnchor{
+	text-decoration: none;
+	color: inherit;
+}
+
+textarea{
+	resize: none;
+}
+
+form{
+	margin-bottom: 26.8%;
+}
+
+footer{
+	background-color: rgba(42, 22, 2, 1);
+	text-align: right;
+	font-family: 'Pacifico', cursive;
+	font-size: 1.25em;
+	color:  rgba(254, 174, 74, 1);
+	padding: 7px;
+}
+
+footer img{
+	width: 175px;
+	height: 36px;
+}
